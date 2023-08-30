@@ -1,17 +1,12 @@
-ENTER NAME OF ORIGINAL ODB (HIGHER VERSION) TO READ FROM WHICH RESULTS NEED TO BE READ,bushing
-ENTER STEP NAME OF INTEREST OF ORIGINAL ODB FROM WHICH RESULTS NEED TO BE READ,Step-1
-ENTER NAME OF ODB (LOWER VERSION) TO WRITE DATA INTO,bushing-Abq2016
+ENTER  NAME OF ODB FROM WHICH RESULTS ARE TO BE READ,boltedFlange.odb
+ENTER STEP NUMBERS HERE IN ODB FROM WHICH RESULTS ARE TO BE READ (SEPERATED BY COMMA),"1,2,3"
+ENTER FRAME NUMBERS HERE FOR EACH STEP (SEPERATED BY COMMA),"11,11,11"
+ENTER NAME OF ODB TO WHICH RESULTS ARE TO BE WRITTEN (CREATE THIS ODB USING DATACHECK AS A ONE TIME OPERATION),boltedFlangeDataCheck.odb
+ENTER NODE SET NAMES FOR WHICH RUIZ PARAMETER CALCULATIONS NEED TO BE DONE (SEPERATED BY COMMA),"TOPFLANGE_ALL, BOTFLANGE_ALL, GASKET-1_ALL,NUT-1_ALL,HALFNUT-1_ALL,HALFNUT-2_ALL,HALFBOLT-1_ALL,HALFBOLT-2_ALL,BOLT-1_ALL"
 ,
-NOTES:,
-(1) DO NOT CHANGE THE ORDER OF THE INPUTS,
-(2) PROCEDURE:,
-STEP 1: Enter the required inputs in this spreadsheet,
-STEP 2: Place the higher version ODB and input file for datacheck in same folder,
-STEP 3: Create blank ODB in lower version using datacheck with different name so it does not overwrite higher version ODB,
-STEP 4: Open Abaqus Viewer (HIGHER VERSION) > File > Run Script > ODBResultsTransferNewerToOlderVersionStore.py  ,
-and after completion go to Abaqus Viewer (LOWER VERSION) > File > Run Script > ODBResultsTransferNewerToOlderVersionWrite.py,
 ,
-YOU CAN USE OF ANY 3 METHOD TO RUN SCRIPT IN ABAQUS:,
-METHOD 1: Open Abaqus Viewer > File > Run Script > Script.py ,
-METHOD 2: Open Command Prompt > Run command > abq2018 CAE noGUI=Script.py ,
-METHOD 3: Open Command Prompt > Run command > abq2018 python Script.py  ,
+,
+,
+,
+,
+***DO NOT CHANGE THE ORDER OF THE INPUTS,
